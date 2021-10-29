@@ -113,7 +113,21 @@ a {
   text-decoration: none;
 }
 .menu a:hover {
-  color: rgb(250, 241, 216);
+  color: rgb(71, 107, 207);
+}
+
+.menugirl {
+  font-family: "Caveat", cursive;
+  text-align: right;
+  font-size: 50px;
+  padding-right: 5%;
+  padding-top: 5%;
+}
+a {
+  text-decoration: none;
+}
+.menugirl a:hover {
+  color: rgb(71, 107, 207);
 }
 
 .next {
@@ -141,6 +155,23 @@ a {
   bottom: 0;
   font-family: "Reenie Beanie", cursive;
   font-size: 80px;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
+.boychoice a:hover {
+  color: rgb(71, 107, 207);
+}
+.girlchoice {
+  text-align: center;
+  bottom: 0;
+  font-family: "Caveat", cursive;
+  font-size: 50px;
 
   margin-left: auto;
   margin-right: auto;
