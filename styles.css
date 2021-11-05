@@ -181,6 +181,9 @@ a:visited {
   text-decoration: none;
   color: #000;
 }
+.girlchoice a:hover {
+  color: rgb(240, 144, 26);
+}
 
 .gameover {
   font-family: "EB Garamond", serif;
