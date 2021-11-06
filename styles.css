@@ -52,6 +52,7 @@
 .cardboy a {
   text-decoration: none;
 }
+
 .cardgirl {
   width: 400px;
   height: 500px;
@@ -190,4 +191,11 @@ a:visited {
   font-size: 100px;
   text-align: center;
   padding: 80px 0;
+}
+
+.portrait {
+  text-align: center;
+  width: 600px;
+  height: 600px;
+  z-index: 100;
 }
