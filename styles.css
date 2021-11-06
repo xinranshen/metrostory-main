@@ -98,8 +98,17 @@ a {
   margin: auto;
   text-align: justify;
 
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: 28px;
+}
+.narration2 {
+  font-family: "EB Garamond", serif;
+  margin: auto;
+  text-align: justify;
+
+  padding-left: 0px;
+  padding-right: 100px;
   font-size: 28px;
 }
 
@@ -193,9 +202,11 @@ a:visited {
   padding: 80px 0;
 }
 
-.portrait {
+img {
   text-align: center;
-  width: 600px;
-  height: 600px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+
   z-index: 100;
 }
