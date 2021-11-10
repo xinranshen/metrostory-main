@@ -14,6 +14,11 @@
 .button a {
   text-decoration: none;
   color: black;
+  transition: color 0.5s;
+}
+
+.button a:hover {
+  color: gold;
 }
 
 .container {
@@ -48,20 +53,36 @@
   height: 500px;
 
   background-color: rgb(250, 241, 216);
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
 }
 .cardboy a {
   text-decoration: none;
+}
+.cardboy:hover {
+  background-color: rgb(240, 231, 208);
+  background-color: rgb(240, 231, 208);
+  box-shadow: 12px 12px 2px 1px rgba(174, 174, 247, 0.2);
+  transform: translateY(4px);
+  transition: 1s ease;
 }
 
 .cardgirl {
   width: 400px;
   height: 500px;
-
+  box-shadow: 12px 12px 2px 1px rgba(212, 247, 195, 0.753);
   background-color: rgb(215, 238, 238);
 }
 .cardgirl a {
   text-decoration: none;
 }
+.cardgirl:hover {
+  background-color: rgb(190, 241, 241);
+  background-color: rgb(190, 241, 241);
+  box-shadow: 12px 12px 2px 1px rgba(226, 240, 219, 0.753);
+  transform: translateY(4px);
+  transition: 1s ease;
+}
+
 .text {
   font-family: "EB Garamond", serif;
   padding-left: 100px;
@@ -97,6 +118,7 @@ a {
   font-family: "EB Garamond", serif;
   margin: auto;
   text-align: justify;
+  color: rgba(0, 0, 0, 0.913);
 
   padding-left: 100px;
   padding-right: 100px;
@@ -106,6 +128,7 @@ a {
   font-family: "EB Garamond", serif;
   margin: auto;
   text-align: justify;
+  color: rgba(0, 0, 0, 0.913);
 
   padding-left: 0px;
   padding-right: 100px;
@@ -150,6 +173,9 @@ a {
   padding-top: 200px;
 }
 
+.next a:hover {
+  color: rgb(71, 107, 207);
+}
 .last {
   text-align: left;
   bottom: 0;
@@ -164,7 +190,7 @@ a {
   text-align: center;
   bottom: 0;
   font-family: "Reenie Beanie", cursive;
-  font-size: 80px;
+  font-size: 60px;
 
   margin-left: auto;
   margin-right: auto;
@@ -203,7 +229,6 @@ a:visited {
 }
 
 img {
-  text-align: center;
   width: 300px;
   height: 300px;
   text-align: center;
@@ -211,6 +236,22 @@ img {
   z-index: 100;
 }
 
+#portraitboy img {
+  width: 500px;
+  height: 500px;
+  text-align: center;
+
+  z-index: 100;
+}
+
+#secondportrait img {
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  padding-left: 30%;
+
+  z-index: 100;
+}
 .flex-container {
   display: flex;
 }
@@ -225,4 +266,38 @@ img {
 
 #wall2 {
   width: 300px;
+}
+
+/* overlay & hover effect learned from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade */
+.overlay {
+  position: absolute;
+  top: 18%;
+
+  text-align: center;
+  margin-left: 29.5%;
+  height: 505px;
+  width: 505px;
+  opacity: 0;
+
+  transition: 1s ease;
+  background-color: rgb(246, 255, 255);
+}
+
+#secondportrait:hover .overlay {
+  opacity: 1;
+}
+
+.lasttext {
+  color: rgba(12, 61, 100, 0.913);
+  font-size: 30px;
+
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  font-family: "EB Garamond", serif;
+
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
